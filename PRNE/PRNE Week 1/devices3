@@ -1,0 +1,6 @@
+device1,ios,10.3.21.5,user1,pass1
+device2,ios,10.3.21.6,user2,pass2
+device3,nx-os,10.3.21.7,user3,pass3
+device4,nx-os,10.3.21.8,user4,pass4
+device5,ios-xr,10.3.21.9,user5,pass5
+device6,ios-xr,10.3.21.10,user6,pass6

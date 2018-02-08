@@ -1,0 +1,36 @@
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 10 subnets, 3 masks
+C        10.1.1.0/24 is directly connected, GigabitEthernet0/1
+L        10.1.1.1/32 is directly connected, GigabitEthernet0/1
+C        10.1.2.0/30 is directly connected, GigabitEthernet0/2
+L        10.1.2.1/32 is directly connected, GigabitEthernet0/2
+C        10.1.3.0/30 is directly connected, GigabitEthernet0/3
+L        10.1.3.1/32 is directly connected, GigabitEthernet0/3
+O        10.2.3.0/30 [110/2] via 10.1.3.2, 00:12:13, GigabitEthernet0/3
+                     [110/2] via 10.1.2.2, 00:12:13, GigabitEthernet0/2
+C        10.30.30.1/32 is directly connected, Loopback0
+O E2     10.30.30.2/32 [110/20] via 10.1.2.2, 00:12:23, GigabitEthernet0/2
+O E2     10.30.30.3/32 [110/20] via 10.1.3.2, 00:12:13, GigabitEthernet0/3
+      11.0.0.0/32 is subnetted, 3 subnets
+C        11.1.1.1 is directly connected, Loopback11
+O E2     11.2.2.2 [110/20] via 10.1.2.2, 00:01:56, GigabitEthernet0/2
+O E2     11.3.3.3 [110/20] via 10.1.3.2, 00:01:16, GigabitEthernet0/3
+      12.0.0.0/32 is subnetted, 3 subnets
+C        12.1.1.1 is directly connected, Loopback12
+O E2     12.2.2.2 [110/20] via 10.1.2.2, 00:01:46, GigabitEthernet0/2
+O E2     12.3.3.3 [110/20] via 10.1.3.2, 00:01:07, GigabitEthernet0/3
+      13.0.0.0/32 is subnetted, 1 subnets
+O E2     13.2.2.2 [110/20] via 10.1.2.2, 00:00:19, GigabitEthernet0/2
+      14.0.0.0/32 is subnetted, 1 subnets
+O E2     14.2.2.2 [110/20] via 10.1.2.2, 00:00:06, GigabitEthernet0/2
